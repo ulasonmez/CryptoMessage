@@ -55,10 +55,12 @@ char letter;
 		printf("%c",num);
 			i+=3;
 		}
+		//bosluk
 		else if(*(message+i)==32 && *(message+i+1)==32){
 			printf(" ");
 			i++;
 		}
+		//2 rakamliysa
 		else if(*(message+i)>=97 && *(message+i)<=122 &&
 				*(message+i+1)>=97 && *(message+i+1)<=122){
 					two[0] = *(message+i);
@@ -67,7 +69,7 @@ char letter;
 					printf("%c",num);
 					i+=3;
 				}
-
+				//3 rakakmliysa
 		else if(*(message+i)>=97 && *(message+i)<=122 &&
 				*(message+i+1)>=97 && *(message+i+1)<=122 &&
 				*(message+i+2)>=97 && *(message+i+2)<=122){
